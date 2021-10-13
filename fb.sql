@@ -1,4 +1,15 @@
-CREATE TABLE Football_Competition (
+DROP DATABASE IF EXISTS `FC`;
+
+
+/*******************************************************************************
+   Create database
+********************************************************************************/
+CREATE DATABASE `FC`;
+
+
+USE `FC`;
+
+CREATE TABLE `Football_Competition` (
     `Column_1` VARCHAR(10) CHARACTER SET utf8,
     `Column_2` VARCHAR(8) CHARACTER SET utf8,
     `Column_3` VARCHAR(16) CHARACTER SET utf8,
@@ -8,7 +19,7 @@ CREATE TABLE Football_Competition (
     `Column_7` INT,
     `Column_8` INT
 );
-INSERT INTO Football_Competition VALUES
+INSERT INTO `Football_Competition` VALUES
     ('12.09.2020','18:45:00','sc Heerenveen','Willem II',2,0,1,0),
     ('12.09.2020','20:00:00','PEC Zwolle','Feyenoord',0,2,0,1),
     ('12.09.2020','21:00:00','FC Twente','Fortuna Sittard',2,0,1,0),
@@ -258,8 +269,7 @@ INSERT INTO Football_Competition VALUES
     ('03.04.2021','21:00:00','Sparta Rotterdam','PEC Zwolle',3,2,1,0),
     ('04.04.2021','12:15:00','Feyenoord','Fortuna Sittard',2,0,0,0),
     ('04.04.2021','14:30:00','ADO Den Haag','FC Utrecht',1,4,0,3),
-    ('04.04.2021','14:30:00','PSV','Heracles Almelo',3,0,2,0);
-INSERT INTO Football_Competition VALUES
+    ('04.04.2021','14:30:00','PSV','Heracles Almelo',3,0,2,0),
     ('04.04.2021','16:45:00','FC Emmen','RKC Waalwijk',3,1,3,0),
     ('04.04.2021','16:45:00','sc Heerenveen','AFC Ajax',1,2,1,1),
     ('09.04.2021','20:00:00','Vitesse','ADO Den Haag',0,0,0,0),
